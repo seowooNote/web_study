@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_ex</title>
+
+    <style>
+        .logo{
+            margin: 0 auto;
+            width: 244px;
+            height: 107px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSih4e-Ktja4mEZQgVsJ6R_XngHPcah72VJAA&usqp=CAU) ;
+            background-size: 244px 107px;
+        }
+
+        .box {
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 460px;
+            height: 316px;
+
+        }
+
+        .round-box{
+            position: absolute;
+            top: -10px;
+            right: -30px;
+            width: 215px;
+            height: 25px;
+            border: solid 1px #03c75a;
+            border-radius: 15px;
+            font-size: 10px;
+            line-height: 25px;
+            background-color: #fff;
+            color: #03c75a;
+            z-index: 1;
+        }
+
+        .round-box-v {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text{
+            font-size: 7.5px;
+            line-height: 25px;
+            margin-left: 15px;
+        }
+
+        .x-button{
+            transform: translate(-50%, -50%);
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            z-index: 99999;
+        }
+
+        .tab-box{
+            display: flex;
+        }
+
+        .tab{
+            width: 33.3333%;
+            height: 61px;
+            text-align: center;
+            line-height: 61px;
+            box-sizing: border-box;
+        }
+
+        .tab-1{
+            border-top-right-radius: 5px;
+            border-right: 1px solid #e3e3e3;
+        }
+
+        .tab-2{
+            border-bottom-left-radius: 5px;
+            border-bottom: 1px solid #e3e3e3;
+            border-right: 1px solid #e3e3e3;
+        }
+
+        .tab-3{
+            border-bottom: 1px solid #e3e3e3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="box">
+        <div class="round-box">
+            <div class="round-box-v">
+                <div class="text">PC방 등 공용PC라면 QR코드 로그인이 더 안전해요.</div>
+                <div class="x-button">x</div>
+            </div>
+        </div>
+
+        <div class="tab-box">
+            <div class="tab tab-1">ID 로그인</div>
+            <div class="tab tab-2">일회용 번호</div>
+            <div class="tab tab-3">QR 코드</div>
+        </div>
+    </div>
+</body>
+</html>

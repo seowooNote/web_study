@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        h1 {
+            font-size: 50px;
+            color: pink;
+        }
+
+        div > .title {
+            font-size: 70px;
+            color: aquamarine;
+        }
+
+        .title {
+            font-size: 70px;
+            color: purple;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: blue;
+        }
+
+        .title-width {
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 내부 스타일 시트는 사용을 지양 -->
+    <h1 style="font-size: 40px; color: red;">제목</h1>
+    <h1>제목2</h1>
+    <div>
+        <h1 class="title title-width">제목3</h1>
+    </div>
+    <!-- 스타일 우선순위
+        1) !important     (사용X)
+        2) 인라인 스타일   (사용X)
+        3) id 스타일
+        4) class 스타일
+        5) 타입 스타일(태그) 
+    -->
+</body>
+</html>
