@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스와 가상 요소</title>
+    <style>
+        /* input 태그는 focus 가 active 보다 상위 우선순위 */
+        input:active {
+            background-color: #222;
+        }
+
+        input:focus {
+            background-color: pink;
+        }
+
+        button{
+            border: 1px solid red;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+
+        button:active {
+            background-color: pink;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <input type="text">
+    <button>확인</button>
+</body>
+</html>

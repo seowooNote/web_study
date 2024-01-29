@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 고급 선택자 - 연결 선택자 -> 하위선택자</title>
+    <style>
+        /* 하위 선택자 */
+        .box1 p {
+            background-color: red;
+        }
+
+        .box2 main p {
+            background-color: blue;
+        }
+
+        p {
+            background-color: pink;
+        }
+        /* 캐스케이딩으로 모든 p태그가 pink 색상으로 설정되어야 하나, 선택자 우선순위 때문에 위의 CSS 코드의 조합구성이 더 우선순위이다. */
+        /* 스타일 우선순위
+        1) !important     (사용X)
+        2) 인라인 스타일   (사용X)
+        3) id 스타일
+        4) class 스타일
+        5) 타입 스타일(태그) 
+        */
+
+        /* 자식 선택자 */
+        .box3 > p {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>박스1-1</p>
+        <h1>박스1-2</h1>
+        <main>
+            <p>박스1-3</p>
+        </main>
+    </div>
+    <div class="box2">
+        <p>박스2-1</p>
+        <main>
+            <p>박스2-2</p>
+        </main>
+    </div>
+    <div class="box3">
+        <p>박스3-1</p>
+        <main>
+            <p>박스3-2</p>
+        </main>
+    </div>
+</body>
+</html>

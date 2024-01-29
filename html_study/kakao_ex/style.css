@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@ body{
     color: #191919;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
@@ -19,7 +19,7 @@ h1{
     border: 1px solid rgba(0,0,0,.12)
 }
 
-.input-box{
+.input-box {
     display: flex;
     justify-content: center;
 }
@@ -36,12 +36,12 @@ h1{
     padding: 10px 0 8px;
 }
 
-.check-box{
+.check-box {
     margin-top: 25px;
     width: 440px;
 }
 
-.log-in{
+.log-in {
     margin-top: 40px;
     background-color: #fee500;
     text-decoration: none;
@@ -51,12 +51,12 @@ h1{
     font-size: 16px;
 }
 
-.or{
+.or {
     text-align: center;
     margin: 15px 0 15px 0;
 }
 
-.qr{
+.qr {
     text-decoration: none;
     border: none;
     width: 440px;
@@ -66,7 +66,7 @@ h1{
     font-size: 16px;
 }
 
-.create{
+.create {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
@@ -74,7 +74,7 @@ h1{
     margin-bottom: 40px;
 }
 
-.footer{
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;

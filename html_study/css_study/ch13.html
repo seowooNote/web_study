@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            /* flex-direction 기본값 row(default) */
+            flex-direction: row;
+            /* justify-content 가로 정렬 관련 속성 / 기본값 flex-start(default)  */
+            justify-content: center;
+            /* align-items 세로 정렬 관련 속성 / 기본값 flex-start(default) */
+            align-items: center;
+            /* flex-wrap 자동 정렬 관련 속성 / 기본값 nowrap(default) */
+            flex-wrap: wrap;
+            border: 1px solid #000;
+            height: 400px;
+            /* position vs flex -> position은 겹쳐야 될때! */
+        }
+
+        .box1 {
+            border: 1px solid #000;
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
