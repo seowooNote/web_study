@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 요소에 접근하고 속성 가져오기1</title>
+</head>
+<body>
+    <input type="text" id="search" value="텍스트검색" />
+    <input type="text" class="inputs" />
+    <input type="text" class="inputs" />
+
+    <!-- script 태그는 body 태그 바로 위에 작성하는 것이 바람직함 -->
+    <!-- script 태그 내부에 javaScript 적용 가능 -->
+    <script>
+        const searchInput = document.getElementById("search");
+        // console.log(document.getElementById("search")); // <input type="text" id="search" /> 웹페이지의 콘솔창에 출력됨
+        console.log(searchInput.value); // 텍스트검색
+        searchInput.value = "검색내용";
+        console.log(searchInput.value); // 검색내용
+
+        const inputs = document.getElementsByClassName("inputs");
+        console.log(inputs); // HTMLCollection(2) [input.inputs, input.inputs] 웹페이지의 콘솔창에 출력됨
+        inputs[0].value = "aaa";
+        inputs[1].value = "bbb";
+        
+        const inputs2 = document.getElementsByTagName("input"); // HTMLCollection(3) [input#search, input.inputs, input.inputs, search: input#search] 웹페이지의 콘솔창에 출력됨
+        console.log(inputs2);
+
+        // document.querySelector() 선택자를 통한 요소 가져오기(하나만 가져옴) - 고급선택자 사용 가능
+        const searchInput2 = document.querySelector("#search"); // 아이디 선택자 요소 가져오기
+        console.log(searchInput2);
+        const inputs3 = document.querySelector(".inputs"); // 첫번째 글래스 선택자 요소 가져오기(클래스 선택자가 여러개일 경우 하나만 가져옴)
+        console.log(inputs3);
+        const inputs4 = document.querySelector("input"); // 첫번째 태그 선택자 요소 가져오기(태그 선택자가 여러개일 경우 하나만 가져옴)
+        console.log(inputs4);
+        
+        // document.querySelectorAll() 선택자를 통한 요소 가져오기(모두 가져옴) - 고급선택자 사용 가능
+        const inputs5 = document.querySelectorAll(".inputs"); // 클래스 선택자에 해당하는 모든 요소 가져오기
+        console.log(inputs5);
+        const inputs6 = document.querySelectorAll("input"); // 태그 선택자에 해당하는 모든 요소 가져요기
+        console.log(inputs6);
+    </script>
+
+</body>
+</html>
