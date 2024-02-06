@@ -1,6 +1,6 @@
 // 객체(Object)
 // JavaScript 객체 형태 = {key: value, key: value, ...}     (중괄호를 사용하여 객체 생성)
-let student =  {
+let student = {
     name: '홍길동',
     age: 20
 };

@@ -1,4 +1,5 @@
 .side-bar-layout {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -7,13 +8,26 @@
     background-color: #33333311;
 }
 
+.side-bar-show {
+    display: block;
+}
+
 .side-bar-container {
+    position: absolute;
+    top: 0px;
+    left: -320px;
+    transition: left 0.5s ease-in-out;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     width: 320px;
     height: 100%;
     background-color: white;
     box-shadow: 1px 0px 10px #00000011;
+}
+
+.side-bar-container-show {
+    top: 0px;
+    left: 0px;
 }
 
 .side-bar-header {

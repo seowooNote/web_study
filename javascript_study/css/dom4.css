@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.containers {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    border: 1px solid #333;
+    width: 800px;
+    height: 600px;
+}
+
+.box {
+    margin: 10px;
+    border: 1px solid #333;
+    width: 100px;
+    height: 100px;
+}
+
+.red-box {
+    background-color: red;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+.box-container-new {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    border: 1px solid #333;
+    width: 800px;
+    height: 600px;
+}

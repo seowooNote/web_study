@@ -11,7 +11,7 @@ console.log(num3);
 var num3 = "안녕";
 console.log(num3);
 // var 쓰지 말고 let 사용
-
+// var 를 이용하여 같은 변수를 중복으로 선언하여 사용해도 되는 오류 발생(재선언이 가능한 오류)
 // let 은 호이스팅 안됨(=> var 쓰지 말고 let 사용)
 // console.log(num4);
 let num4 = 40;

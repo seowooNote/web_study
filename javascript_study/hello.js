@@ -21,7 +21,7 @@ console.log(typeof(true)); // boolean
 var n;
 console.log(typeof(n)); // undefined
 console.log(n) // undefined
-n= null;
+n = null;
 console.log(typeof(n)); // object
 console.log(n); // null
 console.log(() => {}); // [function (anonymous)]
